@@ -11,7 +11,7 @@ import (
 
 func main() {
 	Init()
-	fmt.Println("Server running on port 3008!")
+	fmt.Println("Server running on port 3012!")
 	router := mux.NewRouter()
 	router.HandleFunc("/NodeBlog/blogList", handleBlogList).Methods("GET")
 	router.HandleFunc("/NodeBlog/blog/{id}", handleBlog).Methods("GET")
