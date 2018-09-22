@@ -13,8 +13,8 @@ func main() {
 	Init()
 	fmt.Println("Server running on port 3012!")
 	router := mux.NewRouter()
-	router.HandleFunc("/NodeBlog/blogList", handleBlogList).Methods("GET")
-	router.HandleFunc("/NodeBlog/blog/{id}", handleBlog).Methods("GET")
+	router.HandleFunc("/GolangBlog/blogList", handleBlogList).Methods("GET")
+	router.HandleFunc("/GolangBlog/blog/{id}", handleBlog).Methods("GET")
 	http.ListenAndServe(":3012", router)
 }
 
